@@ -81,7 +81,7 @@ print(f"Loaded {len(old_items)} questions.")
 # 3. Upload JSON + PNG together
 # ---------------------------------------------
 API_URL = "https://sachadigi.com/limanplatform/admin/question"
-token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzY1MTEwNTE0LCJleHAiOjE3NjUxMjQ5MTR9.v1CmwyACYNGDFuHBSGFRbBBRJR2BewrwP-S_5Huj9O8"
+token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzY1MTMxNzMzLCJleHAiOjE3NjUxNDYxMzN9._TnFylhFi0JmLlDwF3XBUTKeJ2vBosecLeRVjE-Xzpg"
 
 for item in old_items:
     qid = item.get("qid")

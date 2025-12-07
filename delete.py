@@ -3,7 +3,7 @@ import requests
 # 1. API endpoints
 GET_URL = "https://sachadigi.com/limanplatform/quiz"  # Endpoint to get the list of items
 DELETE_URL = "https://sachadigi.com/limanplatform/admin/question/easy/"  # Endpoint to delete a specific item by ID
-token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzY1MTEwNTE0LCJleHAiOjE3NjUxMjQ5MTR9.v1CmwyACYNGDFuHBSGFRbBBRJR2BewrwP-S_5Huj9O8"
+token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzY1MTMxNzMzLCJleHAiOjE3NjUxNDYxMzN9._TnFylhFi0JmLlDwF3XBUTKeJ2vBosecLeRVjE-Xzpg"
 HEADERS = {"Authorization": f"Bearer {token}"}
 
 
