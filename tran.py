@@ -1,8 +1,8 @@
 import json
 from googletrans import Translator
 
-INPUT_FILE = "194.json"
-OUTPUT_FILE = "output.json"
+INPUT_FILE = "194easy.json"
+OUTPUT_FILE = "outputeasy.json"
 
 translator = Translator()
 

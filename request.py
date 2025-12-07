@@ -49,7 +49,7 @@ def convert_item(old):
         raise ValueError(f"Correct answer '{answer_letter}' does not exist in options")
 
     return {
-        "level": "hard",
+        "level": "easy",
         "question": [{
             "en": old.get("q", ""),
             "fr": old.get("q_fr", ""),
@@ -69,7 +69,7 @@ def convert_item(old):
 # ---------------------------------------------
 # 2. Load old items
 # ---------------------------------------------
-INPUT_FILE = "output.json"
+INPUT_FILE = "outputeasy.json"
 IMAGE_FOLDER = "193"
 
 with open(INPUT_FILE, "r", encoding="utf-8") as f:
@@ -81,7 +81,7 @@ print(f"Loaded {len(old_items)} questions.")
 # 3. Upload JSON + PNG together
 # ---------------------------------------------
 API_URL = "https://sachadigi.com/limanplatform/admin/question"
-token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzY1MDMyMjE2LCJleHAiOjE3NjUwNDY2MTZ9.MFMIInDu7AdW_kyJpDo2yqwJOMw2RLRWiuNPnYHHDIo"
+token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzY1MTEwNTE0LCJleHAiOjE3NjUxMjQ5MTR9.v1CmwyACYNGDFuHBSGFRbBBRJR2BewrwP-S_5Huj9O8"
 
 for item in old_items:
     qid = item.get("qid")

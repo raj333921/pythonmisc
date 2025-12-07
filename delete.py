@@ -2,8 +2,8 @@ import requests
 
 # 1. API endpoints
 GET_URL = "https://sachadigi.com/limanplatform/quiz"  # Endpoint to get the list of items
-DELETE_URL = "https://sachadigi.com/limanplatform/admin/question/hard/"  # Endpoint to delete a specific item by ID
-token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzY1MDMyMjE2LCJleHAiOjE3NjUwNDY2MTZ9.MFMIInDu7AdW_kyJpDo2yqwJOMw2RLRWiuNPnYHHDIo"
+DELETE_URL = "https://sachadigi.com/limanplatform/admin/question/easy/"  # Endpoint to delete a specific item by ID
+token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzY1MTEwNTE0LCJleHAiOjE3NjUxMjQ5MTR9.v1CmwyACYNGDFuHBSGFRbBBRJR2BewrwP-S_5Huj9O8"
 HEADERS = {"Authorization": f"Bearer {token}"}
 
 
