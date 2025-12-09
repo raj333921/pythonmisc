@@ -1,13 +1,19 @@
 import json
-from googletrans import Translator
+from deep_translator import GoogleTranslator, exceptions
 
 INPUT_FILE = "194easy.json"
 OUTPUT_FILE = "outputeasy.json"
 
-translator = Translator()
-
 # These fields should be translated *if they exist*
 fields_to_translate = ["q", "optiona", "optionb", "optionc", "e"]
+
+def safe_translate(text, target_lang):
+    """Translate safely and return original text if translation fails."""
+    try:
+        return GoogleTranslator(source='auto', target=target_lang).translate(text)
+    except Exception as e:
+        print(f"[WARN] Failed to translate '{text}' -> '{target_lang}': {e}")
+        return text   # fallback: return original text
 
 # Load input JSON
 with open(INPUT_FILE, "r", encoding="utf-8") as f:
@@ -19,13 +25,14 @@ for item in data:
     new_item = item.copy()
 
     for field in fields_to_translate:
-        if field not in item:   # <--- skip missing fields
-            continue
+        if field not in item:
+            continue  # Skip missing fields
 
         text = item[field]
 
-        fr = translator.translate(text, dest="fr").text
-        nl = translator.translate(text, dest="nl").text
+        # Translate to French and Dutch
+        fr = safe_translate(text, "fr")
+        nl = safe_translate(text, "nl")
 
         new_item[f"{field}_fr"] = fr
         new_item[f"{field}_nl"] = nl
