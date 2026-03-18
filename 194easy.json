@@ -2345,17 +2345,6 @@
       "optionb": "30"
     },
     {
-      "id": 224,
-      "qid": "258",
-      "qw": "1",
-      "q": "This speed limit applies until the next junction.",
-      "s": "b",
-      "e": "",
-      "optiona": "",
-      "optionb": "",
-      "optionc": ""
-    },
-    {
       "id": 225,
       "qid": "260",
       "qw": "1",
@@ -13280,17 +13269,6 @@
       "optiona": "When entering and leaving a roundabout.",
       "optionb": "Only when entering a roundabout.",
       "optionc": "Only when leaving a roundabout."
-    },
-    {
-      "id": 1272,
-      "qid": "1389",
-      "qw": "1",
-      "q": "There is heavy rain and visibility is reduced to 130 metres. Must the rear fog lights be switched on ?",
-      "s": "c",
-      "e": "THE LIGHTS AND THE HORN - The rear fog light must be switched on: in fog, when visibility is less than about 100 metres; in snowfall, when visibility is less than about 100 metres; in heavy rain, it must always be on in Belgium, regardless of visibility.",
-      "optiona": "Yes, always in heavy rain.",
-      "optionb": "No, because visibility is more than 100 metres.",
-      "optionc": "Rear fog lights are never compulsory."
     },
     {
       "id": 1273,
